@@ -1,2 +1,7 @@
 ---
 # tasks file for myrole
+- name: install httpd
+  yum: 
+    name: httpd
+    state: present
+  notify: starthttpd
