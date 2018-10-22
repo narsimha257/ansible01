@@ -1,2 +1,6 @@
 ---
 # handlers file for myrole
+- name: starthttpd
+  service:
+    name: httpd
+    state: started
